@@ -1,0 +1,22 @@
+select {
+  display: inherit !important;
+}
+
+.card-adjust {
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+}
+
+.control-label {
+  font-weight: bold;
+}
+
+.card-noshadow-sm {
+  @media (max-width: 576px) {
+    box-shadow: none;
+  }
+}
+
+div {
+  min-height: fit-content;
+}

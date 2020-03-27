@@ -1,0 +1,88 @@
+.o-transaction-badge {
+  position: absolute;
+  top: -10px;
+  left: -14px;
+}
+
+.ribbon {
+  &--warning {
+    &.ribbon {
+      .text {
+        background: $warning-color-base;
+        &::before {
+          border-color: transparent $warning-color-dark transparent transparent;
+        }
+      }
+      &::after {
+        border-color: $warning-color-base transparent $warning-color-base $warning-color-base;
+      }
+    }
+  }
+  &--sucess {
+    &.ribbon {
+      .text {
+        background: $sucess-color-base;
+        &::before {
+          border-color: transparent $sucess-color-dark transparent transparent;
+        }
+      }
+      &::after {
+        border-color: $sucess-color-base transparent $sucess-color-base $sucess-color-base;
+      }
+    }
+  }
+  &--danger {
+    &.ribbon {
+      .text {
+        background: $danger-color-base;
+        &::before {
+          border-color: transparent $danger-color-dark transparent transparent;
+        }
+      }
+      &::after {
+        border-color: $danger-color-base transparent $danger-color-base $danger-color-base;
+      }
+    }
+  }
+}
+
+%content_ribbon {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.ribbon {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  //margin:5em;
+  text-align: center;
+
+  .text {
+    display: inline-block;
+    padding: 0.5em 1em;
+    //min-width:20em;
+    line-height: 1.2em;
+
+    position: relative;
+    z-index: 2;
+    &::before {
+      @extend %content_ribbon;
+      top: 100%;
+      left: 0;
+      border-width: 0 0.7em 0.5em 0;
+    }
+  }
+  &::after {
+    @extend %content_ribbon;
+    top: 0;
+    right: -2em;
+    border-width: 1.1em 1em 1.1em 3em;
+
+    z-index: 1;
+  }
+  &::before {
+    @extend %content_ribbon;
+  }
+}

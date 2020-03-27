@@ -1,0 +1,15 @@
+@import '../config/variables.less';
+
+.searchbar {
+  &__dropdown {
+    background: @layout-body-background;
+  }
+  &__link {
+    & > a {
+      color: @gray;
+    }
+    &:hover > a {
+      color: @primary-color;
+    }
+  }
+}

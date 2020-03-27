@@ -1,0 +1,45 @@
+// Libraries and helpers
+// ---------
+@import "lib/lib";
+@import "helpers/helpers";
+
+// Variables
+// ---------
+@import "variables/basic";
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/breakpoints";
+@import "variables/themes"; // only when necessary
+
+// Reset and base files
+// --------------------
+@import "base/base";
+
+// Layouts
+// -------
+@import "layouts/layouts";
+
+// Objects
+// -------
+@import "objects/amount";
+@import "objects/background";
+@import "objects/headerline";
+@import "objects/buttons";
+@import "objects/input";
+@import "objects/logo";
+@import "objects/transaction-badge";
+@import "objects/seudo-info";
+// Other objects as necessary
+
+// Components
+// ----------
+@import "components/component-name-1";
+// Other components as necessary
+
+// Utilities
+// ----------
+@import "utilities";
+
+// Shame
+// -----
+@import "shame";

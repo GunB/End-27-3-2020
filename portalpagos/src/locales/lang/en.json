@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "Email": "Email",
+    "Password": "Password",
+    "Login": "Login",
+    "Did you forget your password": "Did you forget your password?",
+    "Please type in your email": "Please type in your email",
+    "Please type in your password": "Please type in your password",
+    "Login success": "Login success",
+    "Login success description": "Login success description",
+    "Login error": "Login error",
+    "Login error description": "Login error description",
+    "Login token error": "Login token error",
+    "Login token error description": "Login token error description",
+    "Welcome to de admin": "Welcome to the admin",
+    "Welcome to React": "Welcome to React and react-i18next",
+    "welcome": "Hello <br/> <strong>World</strong>",
+    "English": "English",
+    "Spanish": "Spanish",
+    "Cover message 1": "Integer sit amet justo dolor. Cras luctus eget diam at rhoncus. Vivamus et sollicitudin ex. Curabitur scelerisque posuere dictum.",
+    "Cover message 2": "Integer sit amet justo dolor. Cras luctus eget diam at rhoncus. Vivamus et sollicitudin ex. Curabitur scelerisque posuere dictum."
+  }
+}

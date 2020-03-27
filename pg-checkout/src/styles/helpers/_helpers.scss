@@ -1,0 +1,11 @@
+@mixin keyword-sides($keyword, $padding-map, $metric: "") {
+    @each $side in $padding-map{
+        $key: nth($side, 1);
+        $value: nth($side, 2);
+        @each $var in $screen-sides {
+            @if($key == $var){
+                #{$keyword}-#{$key}: #{$value}#{$metric};
+            }
+        }
+    }
+  }

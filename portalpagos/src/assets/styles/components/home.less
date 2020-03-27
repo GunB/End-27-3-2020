@@ -1,0 +1,73 @@
+@import '../config/variables.less';
+.home {
+  &__img {
+    background-image: url('../../img/background.png');
+    background-repeat: no-repeat;
+    height: 290px;
+    background-size: cover;
+    background-position: 0 center;
+  }
+  &__title {
+    padding-top: 50px;
+  }
+  &__search {
+    position: 'relative';
+  }
+  &__cards {
+    padding: 30px 0;
+  }
+  &__cardItem {
+    cursor: pointer;
+    margin: 5px;
+  }
+}
+
+/** estilos para la barra de búsqueda */
+.search {
+  &__icon {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    font-weight: 900;
+    z-index: 1;
+    > svg {
+      fill: @normal-color;
+    }
+  }
+  &__input {
+    padding-left: 30px !important;
+    &::placeholder {
+      color: @normal-color;
+      padding-left: 3px;
+    }
+  }
+}
+
+.cardItem {
+  &__link {
+    color: @gray;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 15px @shadow-color;
+  }
+  &__container:hover {
+    color: @highlight-color;
+    box-shadow: 0 4px 15px fade(@shadow-color, 40%);
+  }
+  &__img {
+    width: 40px;
+    border-radius: 10px;
+  }
+  &__title {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding-left: 10px;
+    word-break: break-word;
+  }
+}

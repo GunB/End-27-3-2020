@@ -1,0 +1,50 @@
+.navBar {
+  &__virtualPay {
+    padding-left: 20px;
+  }
+  &__options {
+    background: transparent !important;
+  }
+}
+
+.ant-layout-header--main {
+  @media (max-width: @screen-lg-max) {
+    height: @layout-header-height * 2 !important;
+  }
+  @media (max-width: @screen-md-max) {
+    height: @layout-header-height * 2 !important;
+  }
+  @media (max-width: @screen-sm-max) {
+    height: @layout-header-height * 2 !important;
+  }
+  @media (max-width: @screen-xs-max) {
+    height: @layout-header-height * 2 !important;
+  }
+}
+
+.header {
+  &--collapsed {
+    width: ~'calc(100% - @{menu-collapsed-width}) !important';
+  }
+  &--private {
+    transition: all 0.2s;
+    position: fixed;
+    z-index: 2;
+    width: ~'calc(100% - @{menu-not-collapsed-width})';
+    height: @layout-header-height !important;
+    background: @component-background !important;
+    &--with-subtitle {
+      height: @layout-header-height + @layout-header-subtitle-height !important;
+    }
+    &--placeholder {
+      height: @layout-header-height !important;
+    }
+  }
+  &__component {
+    border-bottom: 1px solid @border-color-base;
+  }
+  &__subtitle {
+    height: @layout-header-subtitle-height;
+    line-height: @layout-header-subtitle-height;
+  }
+}

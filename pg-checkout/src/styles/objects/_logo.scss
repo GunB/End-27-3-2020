@@ -1,0 +1,5 @@
+.o-logo{
+    //background: $logo-background;
+    @include keyword-sides("padding",$logo-padding);
+    margin-bottom: 1rem;
+}
