@@ -98,7 +98,7 @@
     "jest": "^24.0.0",
     "jest-cli": "^24.0.0",
     "jest-fetch-mock": "2.1.0",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "json-loader": "0.5.7",
     "mini-css-extract-plugin": "0.4.2",
     "mockdate": "2.0.2",
